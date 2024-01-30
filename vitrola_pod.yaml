@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: vitrola
+labels:
+  run: vitrola
+spec:
+  containers:
+  - name: vitrola
+    image: nginx
+    ports:
+    - containerPort: 80

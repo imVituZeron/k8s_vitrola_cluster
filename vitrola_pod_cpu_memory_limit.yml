@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: vitrola
+labels:
+  run: vitrola
+spec:
+  containers:
+  - name: vi
+    image: nginx
+    ports:
+    - containerPort: 80
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "0.5"
+      requests:
+        memory: "64Mi"
+        cpu: "0.3"
